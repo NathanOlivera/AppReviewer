@@ -7,8 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic.ApplicationServices;
 using Org.BouncyCastle.Asn1;
 using UniverseOfHeroes.Entidade;
+using UniverseOfHeroes.Properties;
 using UniverseOfHeroes.Repositório;
 using UniverseOfHeroes.Util;
 using Timer = System.Windows.Forms.Timer;
@@ -37,8 +39,8 @@ namespace UniverseOfHeroes.Forms
         {
             usuarioLogado = usuario;
             InitializeComponent();
-
-            spriteSheet = Image.FromFile("C:\\Users\\GATEWAY\\Documents\\Programação\\LP4\\SideWalk_Orange.png");
+        
+            spriteSheet = Image.FromFile("..\\..\\..\\Resources\\SideWalk_Orange.png");
             timer = new Timer();
             timer.Interval = 100;
             timer.Tick += Timer_Tick;

@@ -63,6 +63,16 @@ namespace UniverseOfHeroes.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap estrela {
+            get {
+                object obj = ResourceManager.GetObject("estrela", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap faixa {
             get {
                 object obj = ResourceManager.GetObject("faixa", resourceCulture);
@@ -86,6 +96,26 @@ namespace UniverseOfHeroes.Properties {
         internal static System.Drawing.Bitmap luzapagada {
             get {
                 object obj = ResourceManager.GetObject("luzapagada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap R {
+            get {
+                object obj = ResourceManager.GetObject("R", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SideWalk_Orange {
+            get {
+                object obj = ResourceManager.GetObject("SideWalk_Orange", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -32,6 +32,7 @@ namespace UniverseOfHeroes.Forms
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             topBar = new Panel();
+            l7 = new PictureBox();
             l13 = new PictureBox();
             l12 = new PictureBox();
             l11 = new PictureBox();
@@ -82,11 +83,11 @@ namespace UniverseOfHeroes.Forms
             nick2 = new Label();
             comment2 = new TextBox();
             piscar = new System.Windows.Forms.Timer(components);
-            l7 = new PictureBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             timer1 = new System.Windows.Forms.Timer(components);
             topBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)l7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)l13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)l12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)l11).BeginInit();
@@ -117,7 +118,6 @@ namespace UniverseOfHeroes.Forms
             ((System.ComponentModel.ISupportInitialize)p3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)p2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)p1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)l7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -145,6 +145,14 @@ namespace UniverseOfHeroes.Forms
             topBar.Name = "topBar";
             topBar.Size = new Size(884, 50);
             topBar.TabIndex = 0;
+            // 
+            // l7
+            // 
+            l7.Location = new Point(420, 12);
+            l7.Name = "l7";
+            l7.Size = new Size(64, 64);
+            l7.TabIndex = 22;
+            l7.TabStop = false;
             // 
             // l13
             // 
@@ -432,7 +440,7 @@ namespace UniverseOfHeroes.Forms
             // 
             // t5
             // 
-            t5.Image = (Image)resources.GetObject("t5.Image");
+            t5.Image = Properties.Resources.estrela;
             t5.Location = new Point(596, 225);
             t5.Name = "t5";
             t5.Size = new Size(18, 18);
@@ -694,14 +702,6 @@ namespace UniverseOfHeroes.Forms
             piscar.Interval = 10;
             piscar.Tick += piscar_Tick;
             // 
-            // l7
-            // 
-            l7.Location = new Point(420, 12);
-            l7.Name = "l7";
-            l7.Size = new Size(64, 64);
-            l7.TabIndex = 22;
-            l7.TabStop = false;
-            // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
@@ -743,6 +743,7 @@ namespace UniverseOfHeroes.Forms
             Load += MainForm_Load;
             topBar.ResumeLayout(false);
             topBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)l7).EndInit();
             ((System.ComponentModel.ISupportInitialize)l13).EndInit();
             ((System.ComponentModel.ISupportInitialize)l12).EndInit();
             ((System.ComponentModel.ISupportInitialize)l11).EndInit();
@@ -775,7 +776,6 @@ namespace UniverseOfHeroes.Forms
             ((System.ComponentModel.ISupportInitialize)p3).EndInit();
             ((System.ComponentModel.ISupportInitialize)p2).EndInit();
             ((System.ComponentModel.ISupportInitialize)p1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)l7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
