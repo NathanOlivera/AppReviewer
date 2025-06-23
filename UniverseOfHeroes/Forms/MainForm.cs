@@ -115,6 +115,7 @@ namespace UniverseOfHeroes.Forms
             if (filmes == null || filmes.Count == 0) return;
 
             Filme filme = filmes[indiceAtual];
+            indiceComment = 0;
 
             lblNome.Text = filme.Nome;
             lblData.Text = $"Lançamento: {filme.DataLancamento:dd/MM/yyyy}";
